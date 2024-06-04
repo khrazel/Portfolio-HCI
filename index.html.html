@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.o">
+	<title>Personal Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="images/logo.png" class="logo">
+			<ul>
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header-text">
+			<p>Student</p>
+			<h1>Hi, I'm Jean <br><span>Khrazel</span> N. Ariz from 3-CS1</h1>
+		</div>
+	</div>
+</div>
+
+<!-- ---------about--------- -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/me.jpg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Zelly</h1>
+				<p><strong>Full Name: </strong>Jean Khrazel N. Ariz</p>
+				<p><strong>Nick Name: </strong>Khrazel / Zelly / Jean</p>
+				<p><strong>Age: </strong>22 years old</p>
+				<p><strong>Birthday: </strong>April 11, 2002</p>
+				<p><strong>Address: </strong>Palo Alto, Calamba Laguna</p>
+				<br>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<p class="tab-links active-link"><strong>Educational Background</strong></p>
+						<li><span><strong>PRIMARY EDUCATION</strong></span><br>San Ramon Elementary School<br>2008-2015</li>
+						<li><span><strong>SECONDARY EDUCATION</strong></span><br>Kapayapaan Integrated School<br><strong>Junior High School</strong><br>2015-2019<br><br><strong>Senior High School</strong><br>2019-2021</li>
+						<li><span><strong>TERTIARY EDUCATION</strong></span><br>City College of Calamba<br>Bachelor of Science in Computer Science<br>2021-Present</li>
+					</ul><br>
+				</div>			
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ---------portfolio--------- -->
+<br>
+<br>
+<br>
+<div id="portfolio">
+	<div class="container">
+		<p class="sub-title">My Previous Projects</p> <br>
+		<h1 class="sub-title">Hand and Digital Drawings</h1>
+		<div class="work-list">
+			<br>
+			<div class="work">
+				<img src="images/tal.png">
+				<div class="layer">
+					<h3>Digital Drawing of Business Logo</h3><br>
+				</div>
+				<img src="images/locker.png">
+				<div class="layer">
+					<h3>Digital Drawing of Perspective</h3><br>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/apple.png">
+				<div class="layer">
+					<h3>Hand and Digital Drawing of Apple</h3><br>
+				</div>
+				<img src="images/anticipation.png">
+				<div class="layer">
+					<h3>Hand and Digital Drawing of Anticipation</h3><br>
+				</div>
+				<img src="images/exaggeration.png">
+				<div class="layer">
+					<h3>Hand and Digital Drawing of Exaggeration</h3>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<h2 class="sub-title">Research Paper</h2>
+		<a href="images/Research Paper in SE1.pdf" view class="btn btn2">Research Paper in SE1</a>
+		<a href="images/Research Paper in SE2.pdf" view class="btn btn2">Research Paper in SE2</a>
+	</div>
+</div>
+
+<!-- ---------contact--------- -->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><img src="images/email.png" class="logo" style="width: 20px; height 10px;"> jknariz@ccc.edu.ph</p>
+				<p><img src="images/contact.png" class="logo" style="width: 20px; height 10px;"> 09917345711</p> <br>
+				<div class="social-icons">
+				<a href="https://www.facebook.com/khrazelariz11?mibextid=2JQ9oc"><img src="images/fb.png" class="logo">
+				<a href="https://www.instagram.com/jn_khrzl?igsh=MWZoeWxxamVzMTgzNg=="><img src="images/ig.png" class="logo">
+				<a href="https://www.linkedin.com/in/khrazel-ariz-660a77294"><img src="images/linkedin.png" class="logo">
+				</div>
+				<a href="images/MyCV.pdf" download class="btn btn2">Download CV</a>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright @ Zelly.</p>
+	</div>
+</div>
+
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classlist.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classlist.remove("active-tab");
+		}
+		event.currentTarget.classlist.add("active-link");
+		document.getElementById(tabname).classlist.add("active-tab");
+	}
+
+</script>
+</body>
+</html>
